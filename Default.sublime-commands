@@ -1,0 +1,40 @@
+[
+	{
+         "caption": "Command Prompt (new Window)",
+         "command": "terminus_open",
+         "args"   : {
+         	"cmd": "cmd.exe",
+            "cwd": "${file_path:${folder}}",
+            "title": "Command Prompt"
+         }
+    },
+	{
+         "caption": "Git Bash (new Window)",
+         "command": "terminus_open",
+         "args"   : {
+         	"cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
+            "cwd": "${file_path:${folder}}",
+            "title": "Git Bash"
+         }
+    },
+    {
+         "caption": "Git Bash (panel)",
+         "command": "terminus_open",
+         "args"   : {
+         	"cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
+            "cwd": "${file_path:${folder}}",
+            "title": "Git Bash",
+            "panel_name": "Terminus"
+         }
+    },
+    {
+         "caption": "WSL Login Shell",
+         "command": "terminus_open",
+         "args"   : {
+         	"cmd": "wsl.exe",
+            "cwd": "${file_path:${folder}}",
+            "title": "ZSH",
+            "panel_name": "Terminus"
+         }
+    }
+]

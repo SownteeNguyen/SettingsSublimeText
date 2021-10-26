@@ -1,0 +1,5 @@
+    {
+    "shell_cmd": "start cmd /k python $file_name",
+    "selector": "source.python",
+    "working_dir": "$file_path"
+    }

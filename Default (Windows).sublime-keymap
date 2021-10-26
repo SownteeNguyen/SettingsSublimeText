@@ -1,0 +1,34 @@
+[
+	{ "keys": ["f10"], "command": "build" },
+	{ "keys": ["ctrl+shift+e"], "command": "toggle_side_bar" },
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+	{ "keys": ["shift+alt+down"], "command": "duplicate_line" },
+	{
+		"keys": ["alt+1"],
+		"command": "terminus_open",
+		"args" : {
+         	"cmd": "cmd.exe",
+            "cwd": "${file_path:${folder}}",
+            "panel_name": "Terminus"
+        }
+	},
+	{
+		"keys": ["alt+2"],
+		"command": "terminus_open",
+		"args" : {
+         	"cmd": "wsl.exe",
+            "cwd": "${file_path:${folder}}",
+            "panel_name": "Terminus"
+        }
+	},
+	{
+		"keys": ["ctrl+`"],
+		"command": "toggle_terminus_panel",
+         "args" : {
+         	"cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
+            "cwd": "${file_path:${folder}}",
+            "panel_name": "Terminus"
+         }
+	},
+]

@@ -1,0 +1,32 @@
+{
+	"variables":
+	{
+
+	},
+	"globals":
+	{
+		"background": "#141523",
+		"line_highlight": "#0d1020",
+        "selection": "#555555",
+	},
+	"rules":
+	[	        
+		{
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "foreground": "#2be98a",
+        },
+
+        {
+        "name": "Member variables",
+        "scope": "variable.language, variable.other.member, variable.parameter, variable.other.readwrite.member, entity.other.attribute-name",
+         "foreground": "#f92672",
+        },
+
+		{
+        "name": "Punctuation",
+        "scope": "punctuation.accessor, punctuation.section.embedded, punctuation.separator, punctuation.definition.attribute, storage.type.function.arrow, punctuation.definition.template-expression, punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end,  punctuation.template-string.element.begin, punctuation.template-string.element.end",
+         "foreground": "#fff",
+        },
+	]
+}
