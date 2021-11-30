@@ -1,11 +1,11 @@
 [
 	{
-         "caption": "Command Prompt (new Window)",
+         "caption": "Power Shell",
          "command": "terminus_open",
          "args"   : {
-         	"cmd": "cmd.exe",
+         	"cmd": "powershell.exe",
             "cwd": "${file_path:${folder}}",
-            "title": "Command Prompt"
+            "title": "Power Shell"
          }
     },
 	{
