@@ -88,7 +88,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment red black "%(!.%{%F{yellow}%}.)~❥ Sowntee"
+    prompt_segment green black "%(!.%{%F{yellow}%}.)❥ Sowntee Nguyen"
   fi
 }
 
@@ -223,10 +223,10 @@ prompt_status() {
 ## Main prompt
 build_prompt() {
   RETVAL=$?
+  prompt_context
   prompt_timestamp
   prompt_status
   prompt_virtualenv
-  prompt_context
   prompt_dir
   prompt_git
   prompt_bzr
